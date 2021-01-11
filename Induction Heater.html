@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<!--
+	ENPH 353 Machine Learning and Computer Vision Project course
+-->
+<html>
+	<head>
+		<title>Induction Heater</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Induction Heater</h1>
+								</header>
+								<div class="image fit"><img src="images/Heater.jpg" alt="" /></div>
+
+
+
+								<!-- Context -->
+									<h2>Context</h2>
+									<p>During my grade 12 year of high school, our AP physics teacher gave us an open ended project to study and build something related to one of the principles we had studied in class. Along with a partner, I decided to tackle Faraday's law of induction, and we built a ZVS driven induction heater. </p>
+									<p>This project was my first introduction to engineering, and it's what sparked my passion for physics and electronics. Although I mostly followed a tutorial for this project, it still gave me a first look at how to source and select parts for soldering together, how to interpret a circuit schematic and how to debug a circuit.</p>
+									<p></p>
+									<hr />
+
+								<!-- Key elements -->
+									<h2>Key elements of this project</h2>
+									
+
+									<h3>schematic</h3>
+									<p><span class="image left"><img src="images/Circuit Diagram Unannotated copy.png" alt="" /></span> Shown to the left is the schematic we used for the ZVS oscillator circuit. The key to this circuit is the work coil (inductor) and capacitor in parallel which form a high frequency resonating circuit, allowing a high frequency alternating current to flow through the work coil. The circuit is called zero volt switching because the two MOSFETs each take turns supplying energy to the LC circuit, and they switch between being on and off at zero volts.  </p>
+									
+									<h3>Operating principles</h3>
+									<p><span class="image right"><img src="images/Work Coil.png" alt="" /></span>Having built the circuit, we wrapped the work coil around a section of PVC pipe to use as the heating tube. As soon as we turned the heater on, it would send a high frequency current through the work coil, creating a strong oscillating magnetic field inside the center of the pipe. Whenever we put a material with a low magnetic permeability (such as a paper clip pictured to the right) inside the pipe, it would create an induced eddy current inside the material, thus heating it up.</p>
+									
+									
+									
+									<hr />
+
+									<p>Please check out the <a href="https://www.instructables.com/DIY-Induction-Heater/" target="_blank"> tutorial I followed here </a> for a more detailed explanation of everything that goes into this project. </p>
+
+									<div class="image fit"><img src="images/Heater Alternate.JPG" alt="" /></div>
+									
+							</section>
+
+					</div>
+
+				
+
+				<!-- Copyright -->
+					<div id="copyright">
+						Christian Malherbe <br>
+						2021
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
