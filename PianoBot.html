@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<!--
+	UBC Open robotics PianoBot Project
+-->
+<html>
+	<head>
+		<title>PianoBot</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>PianoBot</h1>
+								</header>
+								<div class="image fit"><img src="images/CAD.png" alt="" /></div>
+
+
+
+								<!-- Context -->
+									<h2>Context</h2>
+									<p>From the beginning of 2019 to mid 2020, I was involved with the UBC Open Robotics student design team, specifically working on the PianoBot project. The goal of this project was to create a robot that could be given any piece of piano sheet music, and play that piece back on a full scale piano.</p>
+									<p>This project is still being worked on by some members of UBC Open Robotics, but on this site, I will only show images and videos of aspects of the robot that I had a part in developing. </p>
+									<p></p>
+									<hr />
+
+								<!-- Key elements -->
+									<h2>Key elements of our robot</h2>
+									
+
+									<h3>Timing belt driven hands</h3>
+									<p><span class="image left"><img src="images/Single Finger.jpg" alt="" /></span> Although we could have designed our robot to have as many fingers as there are keys on the piano, we decided to make our robot closer resemble a human, and gave it two hands which instead moved along the keyboard.</p>
+									<p>We used two aluminum extrusions that extended the length of the piano keyboard to both define the position of the hands relative to the keyboard, and also support the weight of the hands using roller wheels.<br/></p>
+									<p>To move the hands along the keyboard, we used a timing belt drive, with one belt and motor being used for each hand. As a proof of concept, our initial design used DC motors, and we planned to use optical encoders to control hand position more precisely. Towards the end of my time on the team, we were beginning to make the switch to a rack and pinion drive (to limit the problem of vibrations we were experiencing) and were sourcing stepper motors to improve the accuracy of our hands.<br/></p>
+									<video style="display:block; margin: 0 auto; width: 1000px" controls>
+										<source src="images/Belt Drive.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+									<p><br/></p>
+									
+									<h3>Solenoid actuated fingers</h3>
+									<p><span class="image right"><img src="images/SideView new.png" alt="" /></span> We went through many different iterations for the design of our robot's fingers. The main design challenges we faced were that we required our fingers to be slender, fast, and able to handle the impact of being pressed against a key quickly. </p>
+									
+									<p>To resolve all this we opted to use solenoids, and our design involved a linkage mechanism to convert the backwards linear motion of the solenoids into a downwards motion of the finger at the key. <br/></p>
+									<video style="display:block; margin: 0 auto; width: 500px" controls>
+										<source src="images/London Bridge copy.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+									<p><br/></p>
+									<h3>Electrical and Software</h3>
+
+
+									<p>Control of our robot was handled using software written in C++ for an Arduino Mega Microcontroller. Electronics used in this project included a solenoid turn on circuit featuring flyback diode protection.  </p>
+									<p><br/></p>
+
+									<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-4"><span class="image fit"><img src="images/Arduino Mega.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/Breadboard.JPG" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/Hand Top.JPG" alt="" /></span></div>
+											
+										</div>
+									</div>
+	
+									
+									<hr />
+
+									<p>As mentioned above, I am no longer working on this project, but to learn more about what PianoBot and UBC Open Robotics have acheived, please check out <a href="http://www.ubcopenrobotics.ca" target="_blank"> their site over here. </a></p>
+
+									<div class="image fit"><img src="images/PianoBotLogo.png" alt="" /></div>
+									
+							</section>
+
+					</div>
+
+				
+
+				<!-- Copyright -->
+					<div id="copyright">
+						Christian Malherbe <br>
+						2021
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
